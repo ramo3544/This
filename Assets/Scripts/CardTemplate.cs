@@ -8,16 +8,21 @@ public class CardTemplate : MonoBehaviour
     //private static StatEmulation statEmulations;
     
 
-    public string cardFaction;
-    public string cardName;
-    public string cardText;
+    public string unitFaction;
+    public string unitName;
+    public string unitText;
 
     //Attributes for Card Template
 
-    [SerializeField] float speed;
+    //Coordinates for Movement
+    [SerializeField] int x;
+    [SerializeField] int y;
+    [SerializeField] int z;
+
     [SerializeField] float power;
     [SerializeField] float armor;
     [SerializeField] float energy;
+
 
     // Start is called before the first frame update
     void Start()
